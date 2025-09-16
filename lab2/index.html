@@ -1,0 +1,881 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.20">
+    
+    
+      
+        <title>Home - lab_2 docs</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.e53b48f4.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#2" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="lab_2 docs" class="md-header__button md-logo" aria-label="lab_2 docs" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            lab_2 docs
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Home
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="lab_2 docs" class="md-nav__button md-logo" aria-label="lab_2 docs" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    lab_2 docs
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Home
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Home
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ход работы
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Ход работы">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Задание 1
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Задание 1">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Сравнение
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Замечания
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      Выводы
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Задание 2
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Задание 2">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#threading" class="md-nav__link">
+    <span class="md-ellipsis">
+      threading
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#multiprocessing" class="md-nav__link">
+    <span class="md-ellipsis">
+      multiprocessing
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#asyncio-aiohttp" class="md-nav__link">
+    <span class="md-ellipsis">
+      asyncio + aiohttp
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      Итоговые результаты
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      Выводы
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ход работы
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Ход работы">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Задание 1
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Задание 1">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Сравнение
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Замечания
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      Выводы
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Задание 2
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Задание 2">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#threading" class="md-nav__link">
+    <span class="md-ellipsis">
+      threading
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#multiprocessing" class="md-nav__link">
+    <span class="md-ellipsis">
+      multiprocessing
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#asyncio-aiohttp" class="md-nav__link">
+    <span class="md-ellipsis">
+      asyncio + aiohttp
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      Итоговые результаты
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      Выводы
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="2">Лабораторная работа 2. Потоки. Процессы. Асинхронность.</h1>
+<h2 id="_1">Ход работы</h2>
+<h3 id="1">Задание 1</h3>
+<h4 id="_2">Сравнение</h4>
+<p>Файл <code>benchmark.py</code></p>
+<pre><code class="language-python">import asyncio
+import threading
+import time
+import multiprocessing
+from concurrent.futures import ThreadPoolExecutor, ProcessPoolExecutor
+
+TARGET = 1_000_000_000
+NUM_TASKS = 4
+
+def calculate_sum(start: int, end: int) -&gt; int:
+    total = 0
+    for i in range(start, end):
+        total += i
+    return total
+
+
+# THREADING
+def run_threading():
+    print(&quot;\n1 Запуск с использованием threading...&quot;)
+
+    def worker(start, end, results, index):
+        results[index] = calculate_sum(start, end)
+
+    chunk_size = TARGET // NUM_TASKS
+    threads = []
+    results = [0] * NUM_TASKS
+
+    start_time = time.perf_counter()
+
+    for i in range(NUM_TASKS):
+        start = i * chunk_size + 1
+        end = (i + 1) * chunk_size + 1 if i &lt; NUM_TASKS - 1 else TARGET + 1
+        thread = threading.Thread(target=worker, args=(start, end, results, i))
+        threads.append(thread)
+        thread.start()
+
+    for thread in threads:
+        thread.join()
+
+    total_sum = sum(results)
+    elapsed = time.perf_counter() - start_time
+
+    print(f&quot;Итоговая сумма: {total_sum:,}&quot;)
+    print(f&quot;время выполнения (threading): {elapsed:.2f} секунд&quot;)
+    return elapsed
+
+# MULTIPROCESSING
+def run_multiprocessing():
+    print(&quot;\n2 Запуск с использованием multiprocessing...&quot;)
+
+    chunk_size = TARGET // NUM_TASKS
+    tasks = []
+
+    start_time = time.perf_counter()
+
+    with multiprocessing.Pool(processes=NUM_TASKS) as pool:
+        for i in range(NUM_TASKS):
+            start = i * chunk_size + 1
+            end = (i + 1) * chunk_size + 1 if i &lt; NUM_TASKS - 1 else TARGET + 1
+            tasks.append(pool.apply_async(calculate_sum, (start, end)))
+
+        results = [task.get() for task in tasks]
+
+    total_sum = sum(results)
+    elapsed = time.perf_counter() - start_time
+
+    print(f&quot;Итоговая сумма: {total_sum:,}&quot;)
+    print(f&quot;Время выполнения (multiprocessing): {elapsed:.2f} секунд&quot;)
+    return elapsed
+
+# ASYNC
+async def calculate_sum_async(start: int, end: int) -&gt; int:
+
+    total = 0
+    for i in range(start, end):
+        total += i
+        if i % 10_000_000 == 0:
+            await asyncio.sleep(0)
+    return total
+
+async def run_async():
+    print(&quot;\n3 Запуск с использованием asyncio...&quot;)
+
+    chunk_size = TARGET // NUM_TASKS
+    tasks = []
+
+    start_time = time.perf_counter()
+
+    for i in range(NUM_TASKS):
+        start = i * chunk_size + 1
+        end = (i + 1) * chunk_size + 1 if i &lt; NUM_TASKS - 1 else TARGET + 1
+        tasks.append(calculate_sum_async(start, end))
+
+    results = await asyncio.gather(*tasks)
+    total_sum = sum(results)
+    elapsed = time.perf_counter() - start_time
+
+    print(f&quot;Итоговая сумма: {total_sum:,}&quot;)
+    print(f&quot;Время выполнения (asyncio): {elapsed:.2f} секунд&quot;)
+    return elapsed
+
+if __name__ == &quot;__main__&quot;:
+    print(f&quot;sum от 1 до {TARGET:,} с разбиением на {NUM_TASKS} подзадач&quot;)
+
+    time_threading = run_threading()
+    time_multiprocessing = run_multiprocessing()
+    time_async = asyncio.run(run_async())
+
+    print(&quot;\nСРАВНЕНИЕ\n&quot;)
+    print(f&quot;threading: {time_threading:.2f} сек&quot;)
+    print(f&quot;multiprocessing: {time_multiprocessing:.2f} сек&quot;)
+    print(f&quot;asyncio: {time_async:.2f} сек&quot;)
+</code></pre>
+<p>Результаты выполнения:
+<img alt="task1_1.png" src="../images/task1_1.png" /></p>
+<h4 id="_3">Замечания</h4>
+<p>Стоит отметить, что с помощью Activity Monitor можно увидеть работу всех способов. Самым интересным является
+Multiprocessing так как явно видно что он запускает несколько процессов</p>
+<p><img alt="task1_2.png" src="../images/task1_2.png" /></p>
+<p>здесь представлена работа threading</p>
+<p><img alt="task1_3.png" src="../images/task1_3.png" /></p>
+<p>Здесь представлена работа Multiprocessing</p>
+<p><img alt="task1_4.png" src="../images/task1_4.png" />
+Здесь представлена работа asyncio</p>
+<h4 id="_4">Выводы</h4>
+<ul>
+<li>Для CPU-bound задач Python рекомендуется использовать multiprocessing для реального ускорения за счёт параллельной работы на нескольких ядрах процессора.</li>
+<li>Threading и asyncio не дают прироста в чистых вычислениях из-за ограничений GIL и асинхронной природы работы соответственно.</li>
+</ul>
+<h2 id="2_1">Задание 2</h2>
+<p>Одним из требований задания был парсинг страниц для заполнения базы данных. В качестве примера был выбран сайт <code>auto.ru</code>
+со списком всех машин, доступных в СПб</p>
+<h4 id="threading">threading</h4>
+<p>Файл <code>threading_parser.py</code></p>
+<pre><code class="language-python">import threading
+import time
+
+import requests
+
+from lab_2.task2.common.parser import process_page
+from lab_2.task2.urls import urls
+
+
+def parse_and_save(url_list):
+    for url in url_list:
+        response = requests.get(url, timeout=10)
+        response.raise_for_status()
+        process_page(response.text)
+
+
+def main():
+    num_threads = 5
+    start_time = time.time()
+    chunk_size = (len(urls) + num_threads - 1) // num_threads
+    chunks = [urls[i:i + chunk_size] for i in range(0, len(urls), chunk_size)]
+
+    threads = []
+    for chunk in chunks:
+        thread = threading.Thread(target=parse_and_save, args=(chunk,))
+        threads.append(thread)
+        thread.start()
+
+    for thread in threads:
+        thread.join()
+
+    print(f&quot;Количество потоков: {num_threads}&quot;)
+    print(f&quot;Время выполнения при помощи threading: {time.time() - start_time:.2f} секунд&quot;)
+
+
+if __name__ == &quot;__main__&quot;:
+    main()
+</code></pre>
+<p>Результаты выполнения:</p>
+<p><img alt="task2_2.png" src="../images/task2_2.png" /></p>
+<h4 id="multiprocessing">multiprocessing</h4>
+<p>Файл <code>multiprocessing_parser</code></p>
+<pre><code class="language-python">import multiprocessing
+import time
+
+import requests
+
+from lab_2.task2.common.parser import process_page
+from lab_2.task2.urls import urls
+
+
+def parse_and_save(url_list):
+    for url in url_list:
+        response = requests.get(url, timeout=10)
+        response.raise_for_status()
+        process_page(response.text)
+
+
+def main():
+    start_time = time.time()
+    num_processes = 5
+    chunk_size = (len(urls) + num_processes - 1) // num_processes
+    chunks = [urls[i:i + chunk_size] for i in range(0, len(urls), chunk_size)]
+    processes = []
+
+    for chunk in chunks:
+        process = multiprocessing.Process(target=parse_and_save, args=(chunk,))
+        processes.append(process)
+        process.start()
+
+    for process in processes:
+        process.join()
+
+    print(f&quot;Количество процессов: {num_processes}&quot;)
+    print(f&quot;multiprocessing: {time.time() - start_time:.2f} секунд&quot;)
+
+
+if __name__ == &quot;__main__&quot;:
+    main()
+</code></pre>
+<p>Результаты выполнения:</p>
+<p><img alt="task2_1.png" src="../images/task2_1.png" /></p>
+<h4 id="asyncio-aiohttp">asyncio + aiohttp</h4>
+<p>Файл <code>async_parser.py</code></p>
+<pre><code class="language-python">import asyncio
+import time
+
+import aiohttp
+
+from lab_2.task2.common.parser import process_page
+from lab_2.task2.urls import urls
+
+
+async def fetch(session, url):
+    async with session.get(url, timeout=10, ssl=False) as response:
+        text = await response.text()
+        return url, text
+
+
+async def parse_and_save(url):
+    async with aiohttp.ClientSession() as session:
+        url, html = await fetch(session, url)
+        if html:
+            process_page(html)
+
+async def parse_chunk(chunk):
+    tasks = [parse_and_save(url) for url in chunk]
+    await asyncio.gather(*tasks)
+
+
+async def main():
+    num_chunks = 5
+    start_time = time.time()
+
+    chunk_size = (len(urls) + num_chunks - 1) // num_chunks
+    chunks = [urls[i:i + chunk_size] for i in range(0, len(urls), chunk_size)]
+
+    chunk_tasks = [parse_chunk(chunk) for chunk in chunks]
+    await asyncio.gather(*chunk_tasks)
+
+    print(f&quot;Количество задач: {len(urls)}&quot;)
+    print(f&quot;Время выполнения при помощи asyncio + aiohttp: {time.time() - start_time:.2f} секунд&quot;)
+
+
+if __name__ == &quot;__main__&quot;:
+    asyncio.run(main())
+</code></pre>
+<p>Результаты выполнения:</p>
+<p><img alt="task2_3.png" src="../images/task2_3.png" /></p>
+<h4 id="_5">Итоговые результаты</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Подход</th>
+<th style="text-align: left;">Количество потоков/процессов/задач</th>
+<th style="text-align: left;">Время выполнения</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Threading</strong></td>
+<td style="text-align: left;">5 потоков</td>
+<td style="text-align: left;">18.55 секунд</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Multiprocessing</strong></td>
+<td style="text-align: left;">5 процессов</td>
+<td style="text-align: left;">17.89 секунд</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Asyncio</strong></td>
+<td style="text-align: left;">5 задач</td>
+<td style="text-align: left;">50.51 секунд</td>
+</tr>
+</tbody>
+</table>
+<h4 id="_6">Выводы</h4>
+<ul>
+<li>Для небольшого количества сетевых запросов допустимо использовать threading.</li>
+<li>Asyncio все еще остается самым медленным методом</li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "..", "features": [], "search": "../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.f55a23d4.min.js"></script>
+      
+    
+  </body>
+</html>
