@@ -1,0 +1,817 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.20">
+    
+    
+      
+        <title>Home - lab_1 docs</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.e53b48f4.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#1-fastapi" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="lab_1 docs" class="md-header__button md-logo" aria-label="lab_1 docs" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            lab_1 docs
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Home
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="lab_1 docs" class="md-nav__button md-logo" aria-label="lab_1 docs" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    lab_1 docs
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Home
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Home
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Тема:
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ход работы:
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#api" class="md-nav__link">
+    <span class="md-ellipsis">
+      API Эндпоинты
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#postman" class="md-nav__link">
+    <span class="md-ellipsis">
+      Пример регистрации и логина в Postman
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Тема:
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ход работы:
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#api" class="md-nav__link">
+    <span class="md-ellipsis">
+      API Эндпоинты
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#postman" class="md-nav__link">
+    <span class="md-ellipsis">
+      Пример регистрации и логина в Postman
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="1-fastapi">Лабораторная работа 1. Реализация серверного приложения FastAPI</h1>
+<h2 id="_1">Тема:</h2>
+<p>Разработка веб-приложения для поиска партнеров в путешествие.</p>
+<h2 id="_2">Ход работы:</h2>
+<p>Схема базы данных:
+<img alt="db_schema.png" src="../db_schema.png" /></p>
+<p>Модели описаны в файле <code>models.py</code></p>
+<pre><code class="language-python">from typing import Optional, List
+from datetime import date, datetime
+from enum import Enum
+
+from sqlmodel import SQLModel, Field, Relationship
+
+
+# Enums for better usability
+class Gender(Enum):
+    male = &quot;Male&quot;
+    female = &quot;Female&quot;
+    other = &quot;Other&quot;
+
+class TravelStyle(Enum):
+    camping = &quot;Camping&quot;
+    active = &quot;Active&quot;
+    cultural = &quot;Cultural&quot;
+    comfort = &quot;Comfort&quot;
+
+class ParticipationStatus(Enum):
+    pending = &quot;pending&quot;
+    approved = &quot;approved&quot;
+    rejected = &quot;rejected&quot;
+
+# Models
+class User(SQLModel, table=True):
+    id: Optional[int] = Field(default=None, primary_key=True)
+    name: str
+    email: str
+    pass_hash: str
+    age: Optional[int] = None
+    gender: Optional[Gender] = None
+    country: Optional[str] = None
+    travel_style: Optional[TravelStyle] = None
+    created_at: datetime = Field(default_factory=datetime.utcnow)
+
+    trips_created: List[&quot;Trip&quot;] = Relationship(back_populates=&quot;creator&quot;)
+    trip_requests: List[&quot;TripParticipant&quot;] = Relationship(back_populates=&quot;user&quot;)
+    user_interests: List[&quot;UserInterest&quot;] = Relationship(back_populates=&quot;user&quot;)
+
+
+class Interest(SQLModel, table=True):
+    id: Optional[int] = Field(default=None, primary_key=True)
+    name: str
+    description: Optional[str] = None
+
+    users: List[&quot;UserInterest&quot;] = Relationship(back_populates=&quot;interest&quot;)
+
+
+class Trip(SQLModel, table=True):
+    id: Optional[int] = Field(default=None, primary_key=True)
+    creator_id: int = Field(foreign_key=&quot;user.id&quot;)
+    title: str
+    description: Optional[str] = None
+    destination: str
+    start_date: date
+    end_date: date
+    budget: Optional[float] = None
+    transport: Optional[str] = None
+    max_participants: Optional[int] = None
+    status: str = &quot;active&quot;
+
+    creator: Optional[User] = Relationship(back_populates=&quot;trips_created&quot;)
+    participants: List[&quot;TripParticipant&quot;] = Relationship(back_populates=&quot;trip&quot;)
+
+
+class TripParticipant(SQLModel, table=True):
+    trip_id: int = Field(foreign_key=&quot;trip.id&quot;, primary_key=True)
+    user_id: int = Field(foreign_key=&quot;user.id&quot;, primary_key=True)
+    status: ParticipationStatus = ParticipationStatus.pending
+    message: Optional[str] = None
+    joined_at: datetime = Field(default_factory=datetime.utcnow)
+
+    user: Optional[User] = Relationship(back_populates=&quot;trip_requests&quot;)
+    trip: Optional[Trip] = Relationship(back_populates=&quot;participants&quot;)
+
+
+class UserInterest(SQLModel, table=True):
+    user_id: int = Field(foreign_key=&quot;user.id&quot;, primary_key=True)
+    interest_id: int = Field(foreign_key=&quot;interest.id&quot;, primary_key=True)
+    level: Optional[int] = None
+
+    user: Optional[User] = Relationship(back_populates=&quot;user_interests&quot;)
+    interest: Optional[Interest] = Relationship(back_populates=&quot;users&quot;)
+
+</code></pre>
+<p>Подключение к БД в файле <code>connection.py</code></p>
+<pre><code class="language-python">from sqlmodel import SQLModel, Session, create_engine
+
+DB_USERNAME = &quot;entityfrm&quot;
+DB_PASSWORD = &quot;pP3VJsoAcX2q&quot;
+DB_HOST = &quot;ep-mute-sun-a2woi1rv-pooler.eu-central-1.aws.neon.tech&quot;
+DB_PORT = &quot;5432&quot;
+DB_NAME = &quot;web_dev_sem_6&quot;
+
+DATABASE_URL = f&quot;postgresql://{DB_USERNAME}:{DB_PASSWORD}@{DB_HOST}:{DB_PORT}/{DB_NAME}?sslmode=require&amp;channel_binding=require&quot;
+
+engine = create_engine(DATABASE_URL) # , echo=True
+
+def init_db():
+    SQLModel.metadata.create_all(engine)
+
+def get_session():
+    with Session(engine) as session:
+        yield session
+
+</code></pre>
+<h2 id="api">API Эндпоинты</h2>
+<p>Файл <code>user_endpoints.py</code></p>
+<pre><code class="language-python">from fastapi import APIRouter, HTTPException, Depends
+from sqlmodel import Session, select
+from starlette.responses import JSONResponse
+from starlette.status import HTTP_201_CREATED
+from typing_extensions import List
+
+from lab_1.auth.auth import AuthService
+from lab_1.db.connection import get_session
+from lab_1.model.models.models import User, UserInterest
+from lab_1.model.schemas.user import UserCreate, UserLogin, UserRead, UserPasswordChange
+from lab_1.model.schemas.user_interest import UserInterestRead, UserInterestCreate
+from lab_1.repos.user_repos import select_all_users, find_user
+
+user_router = APIRouter()
+auth_handler = AuthService()
+
+
+# ------ AUTH ------
+
+@user_router.post('/registration', status_code=201, tags=['users'],
+                  description='Register new user')
+def register(user: UserCreate, session=Depends(get_session)):
+    users = select_all_users()
+    if any(u.email == user.email for u in users):
+        raise HTTPException(status_code=400, detail='Email is taken')
+    hashed_pwd = auth_handler.get_password_hash(user.password)
+    print(f'hashed_pwd: {hashed_pwd}')
+    u = User(email=user.email, pass_hash=hashed_pwd, name=user.name)
+    session.add(u)
+    session.commit()
+    return JSONResponse(status_code=HTTP_201_CREATED, content={&quot;Message&quot;: &quot;User Registered&quot;})
+
+@user_router.post('/login', tags=['users'])
+def login(user: UserLogin):
+    user_found = find_user(user.email)
+    if not user_found:
+        raise HTTPException(status_code=401, detail='Invalid email and/or password')
+    verified = auth_handler.verify_password(user.password, user_found.pass_hash)
+    if not verified:
+        raise HTTPException(status_code=401, detail='Invalid email and/or password')
+    token = auth_handler.encode_token(user_found.email)
+    return {'token': token}
+
+
+# ------ GET ------
+
+@user_router.get('/users/me', tags=['users'])
+def get_current_user(user: User = Depends(auth_handler.get_current_user)):
+    return user
+
+@user_router.get(&quot;/users&quot;, response_model=List[UserRead], tags=['users'])
+def get_users(session: Session = Depends(get_session)):
+    return session.exec(select(User)).all()
+
+@user_router.get(&quot;/users/interests/&quot;, response_model=List[UserInterestRead], tags=['users'])
+def get_user_interests(session: Session = Depends(get_session)):
+    return session.exec(select(UserInterest)).all()
+
+@user_router.get(&quot;/users/{user_id}/interests/&quot;, response_model=List[UserInterestRead], tags=['users'])
+def get_user_interests_by_user(user_id: int, session: Session = Depends(get_session)):
+    return session.exec(select(UserInterest).where(UserInterest.user_id == user_id)).all()
+
+
+# ------ POST ------
+
+@user_router.post(&quot;/change-password&quot;, tags=['users'])
+def change_password(
+        data: UserPasswordChange,
+        session: Session = Depends(get_session),
+        current_user: User = Depends(auth_handler.get_current_user)
+):
+    if not auth_handler.verify_password(data.old_password, current_user.password):
+        raise HTTPException(status_code=400, detail=&quot;Incorrect old password&quot;)
+
+    current_user.pass_hash = auth_handler.get_password_hash(data.new_password)
+    session.add(current_user)
+    session.commit()
+    return {&quot;message&quot;: &quot;Password updated successfully&quot;}
+
+@user_router.post(&quot;/users/interests/&quot;, response_model=UserInterestRead, tags=['users'])
+def create_user_interest(data: UserInterestCreate, session: Session = Depends(get_session)):
+    db_interest = UserInterest.model_validate(data)
+    session.add(db_interest)
+    session.commit()
+    session.refresh(db_interest)
+    return db_interest
+
+
+# ------ PATCH ------
+
+@user_router.patch(&quot;/users/{user_id}/interests/{interest_id}&quot;, response_model=UserInterestRead, tags=['users'])
+def update_user_interest_level(user_id: int, interest_id: int, level: int, session: Session = Depends(get_session)):
+    relation = session.get(UserInterest, (user_id, interest_id))
+    if not relation:
+        raise HTTPException(status_code=404, detail=&quot;UserInterest not found&quot;)
+    relation.level = level
+    session.add(relation)
+    session.commit()
+    session.refresh(relation)
+    return relation
+
+
+# ------ DELETE ------
+
+@user_router.delete(&quot;/users/{user_id}/interests/{interest_id}&quot;, response_model=dict, tags=['users'])
+def delete_user_interest(user_id: int, interest_id: int, session: Session = Depends(get_session)):
+    relation = session.get(UserInterest, (user_id, interest_id))
+    if not relation:
+        raise HTTPException(status_code=404, detail=&quot;UserInterest not found&quot;)
+    session.delete(relation)
+    session.commit()
+    return {&quot;ok&quot;: True}
+</code></pre>
+<p>Файл <code>trip_endpoints.py</code></p>
+<pre><code class="language-python">from fastapi import APIRouter, Depends, HTTPException
+from sqlmodel import Session, select
+from typing import List
+
+from lab_1.db.connection import get_session
+from lab_1.model.models.models import Trip, User, TripParticipant
+from lab_1.model.schemas.trip import TripCreate, TripRead, TripUpdate
+from lab_1.auth.auth import AuthService
+from lab_1.model.schemas.trip_participant import TripParticipantCreate, TripParticipantRead, TripParticipantUpdate
+
+trip_router = APIRouter()
+auth_handler = AuthService()
+
+# ------ GET --------
+
+@trip_router.get(&quot;/&quot;, response_model=List[TripRead])
+def get_trips(session: Session = Depends(get_session)):
+    return session.exec(select(Trip)).all()
+
+@trip_router.get(&quot;/{trip_id}&quot;, response_model=TripRead)
+def get_trip(trip_id: int, session: Session = Depends(get_session)):
+    trip = session.get(Trip, trip_id)
+    if not trip:
+        raise HTTPException(status_code=404, detail=&quot;Trip not found&quot;)
+    return trip
+
+@trip_router.get(&quot;/{trip_id}/participants&quot;, response_model=List[TripParticipantRead])
+def get_all_participants(trip_id: int, session: Session = Depends(get_session)):
+    return session.exec(select(TripParticipant).where(TripParticipant.trip_id == trip_id)).all()
+
+@trip_router.get(&quot;/{trip_id}/participants/{user_id}&quot;, response_model=TripParticipantRead)
+def get_trip_participant(trip_id: int, user_id: int, session: Session = Depends(get_session)):
+    participant = session.get(TripParticipant, (trip_id, user_id))
+    if not participant:
+        raise HTTPException(status_code=404, detail=&quot;Participant not found&quot;)
+    return participant
+
+
+# ------ POST ------
+
+@trip_router.post(&quot;/create&quot;, response_model=TripRead)
+def create_trip(
+    trip: TripCreate,
+    session: Session = Depends(get_session),
+    current_user: User = Depends(auth_handler.get_current_user)
+):
+    db_trip = Trip(**trip.model_dump(), creator_id=current_user.id)
+    session.add(db_trip)
+    session.commit()
+    session.refresh(db_trip)
+    return db_trip
+
+@trip_router.post(&quot;/{trip_id}/add-participants&quot;, response_model=TripParticipantRead)
+def create_trip_participant(trip_id: int, data: TripParticipantCreate, session: Session = Depends(get_session)):
+    participant = TripParticipant(
+        trip_id=trip_id,
+        user_id=data.user_id,
+        message=data.message
+    )
+    session.add(participant)
+    session.commit()
+    session.refresh(participant)
+    return participant
+
+
+# ------ PATCH ------
+
+@trip_router.patch(&quot;/{trip_id}/update&quot;, response_model=TripRead)
+def update_trip(trip_id: int, update: TripUpdate, session: Session = Depends(get_session)):
+    trip = session.get(Trip, trip_id)
+    if not trip:
+        raise HTTPException(status_code=404, detail=&quot;Trip not found&quot;)
+    update_data = update.model_dump(exclude_unset=True)
+    for key, value in update_data.items():
+        setattr(trip, key, value)
+    session.commit()
+    session.refresh(trip)
+    return trip
+
+@trip_router.patch(&quot;/{trip_id}/participants/{user_id}&quot;, response_model=TripParticipantRead)
+def update_trip_participant(trip_id: int, user_id: int, update: TripParticipantUpdate, session: Session = Depends(get_session)):
+    participant = session.get(TripParticipant, (trip_id, user_id))
+    if not participant:
+        raise HTTPException(status_code=404, detail=&quot;Participant not found&quot;)
+    update_data = update.model_dump(exclude_unset=True)
+    for key, value in update_data.items():
+        setattr(participant, key, value)
+    session.commit()
+    session.refresh(participant)
+    return participant
+
+
+# ------ DELETE ------
+
+@trip_router.delete(&quot;/{trip_id}/delete&quot;, response_model=dict)
+def delete_trip(trip_id: int, session: Session = Depends(get_session)):
+    trip = session.get(Trip, trip_id)
+    if not trip:
+        raise HTTPException(status_code=404, detail=&quot;Trip not found&quot;)
+    session.delete(trip)
+    session.commit()
+    return {&quot;ok&quot;: True}
+
+@trip_router.delete(&quot;/{trip_id}/participants/{user_id}&quot;, response_model=dict)
+def delete_trip_participant(trip_id: int, user_id: int, session: Session = Depends(get_session)):
+    participant = session.get(TripParticipant, (trip_id, user_id))
+    if not participant:
+        raise HTTPException(status_code=404, detail=&quot;Participant not found&quot;)
+    session.delete(participant)
+    session.commit()
+    return {&quot;ok&quot;: True}
+</code></pre>
+<p>Файл <code>interest_endpoints.py</code></p>
+<pre><code class="language-python">from fastapi import APIRouter, Depends, HTTPException
+from sqlmodel import Session, select
+from typing import List
+
+from lab_1.db.connection import get_session
+from lab_1.model.models.models import Interest, UserInterest
+from lab_1.model.schemas.interest import InterestRead, InterestCreate
+from lab_1.model.schemas.user_interest import UserInterestRead, UserInterestCreate
+
+interest_router = APIRouter()
+user_interest_router = APIRouter()
+
+
+# ------ GET ------
+
+@interest_router.get(&quot;/&quot;, response_model=List[InterestRead])
+def get_all_interests(session: Session = Depends(get_session)):
+    return session.exec(select(Interest)).all()
+
+@interest_router.get(&quot;/{interest_id}&quot;, response_model=InterestRead)
+def get_interest(interest_id: int, session: Session = Depends(get_session)):
+    interest = session.get(Interest, interest_id)
+    if not interest:
+        raise HTTPException(status_code=404, detail=&quot;Interest not found&quot;)
+    return interest
+
+
+# ------ POST ------
+
+@interest_router.post(&quot;/create&quot;, response_model=InterestRead)
+def create_interest(interest: InterestCreate, session: Session = Depends(get_session)):
+    db_interest = Interest.model_validate(interest)
+    session.add(db_interest)
+    session.commit()
+    session.refresh(db_interest)
+    return db_interest
+
+
+# ------DELETE ------
+
+@interest_router.delete(&quot;/{interest_id}&quot;, response_model=dict)
+def delete_interest(interest_id: int, session: Session = Depends(get_session)):
+    interest = session.get(Interest, interest_id)
+    if not interest:
+        raise HTTPException(status_code=404, detail=&quot;Interest not found&quot;)
+    session.delete(interest)
+    session.commit()
+    return {&quot;ok&quot;: True}
+</code></pre>
+<p>Эндпоинты в Swagger</p>
+<p><img alt="swagger1.png" src="../swagger1.png" />
+<img alt="swagger2.png" src="../swagger2.png" /></p>
+<h2 id="postman">Пример регистрации и логина в Postman</h2>
+<p><img alt="postman_reg.png" src="../postman_reg.png" />
+<img alt="postman_login.png" src="../postman_login.png" /></p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "..", "features": [], "search": "../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.f55a23d4.min.js"></script>
+      
+    
+  </body>
+</html>
