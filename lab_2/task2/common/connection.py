@@ -1,13 +1,10 @@
+import os
+
 from sqlmodel import SQLModel, create_engine, Session
+from dotenv import load_dotenv
 
-
-DB_USERNAME = "entityfrm"
-DB_PASSWORD = "pP3VJsoAcX2q"
-DB_HOST = "ep-mute-sun-a2woi1rv-pooler.eu-central-1.aws.neon.tech"
-DB_PORT = "5432"
-DB_NAME = "web_dev_sem_6"
-
-DATABASE_URL = f"postgresql://{DB_USERNAME}:{DB_PASSWORD}@{DB_HOST}:{DB_PORT}/{DB_NAME}?sslmode=require&channel_binding=require"
+load_dotenv()
+DATABASE_URL = os.getenv('DATABASE_URL')
 
 engine = create_engine(DATABASE_URL) # , echo=True
 
